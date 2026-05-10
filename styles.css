@@ -1,0 +1,65 @@
+body{
+    margin: 0px;
+}
+.bg-container{
+    background-image: url("https://images5.alphacoders.com/352/thumb-1920-352387.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.web-heading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: larger;
+}
+
+.first-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.hero-heading{
+    font-family: Impact;
+    font-size: 80px;
+}
+.bg-container-about{
+    background-color: aliceblue;
+    height: 66vh;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 66vh;
+    text-align: left;
+    padding-top: 30px;
+}
+.about-heading{
+    font-size: 50px;
+    font-family: Impact;
+
+}
+.about-paragraph{
+    font-size: 18px;
+    font-family: cursive;
+}
+
+.sub-img{
+  width: 50vw;
+}
+.img-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.li-heading{
+    font-family: Impact;
+}
+.li-content{
+    font-family: cursive;
+}
