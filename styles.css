@@ -63,3 +63,36 @@ body{
 .li-content{
 
 }
+
+.bg-service-container{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+.service-heading{
+    font-family: 'Playfair Display', serif;
+}
+.card-align{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+     gap: 25px;
+
+}
+.box-container{
+    width: 45%;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+.box-container:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px rgba(255, 215, 0, 0.4);
+    border-color: gold;
+
+}
