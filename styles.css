@@ -23,6 +23,14 @@ body{
     border-radius: 35px;
     color: white;
     padding: 20px;
+    width: 350px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.hero-button:hover{
+    background-color: gold;
+    color: black;
+    transform: scale(1.05);
 }
 
 .first-text-container{
@@ -35,6 +43,9 @@ body{
 .hero-heading{
     font-family: Impact;
     font-size: 80px;
+}
+.hero-para{
+    font-size: 20px;
 }
 .bg-container-about{
     background-color: aliceblue;
