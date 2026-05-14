@@ -76,9 +76,11 @@ body{
 }
 .img-align{
     display: flex;
-    flex-direction: column;
+
     justify-content: center;
     align-content: center;
+ 
+
 }
 .li-heading{
     font-family: Impact;
