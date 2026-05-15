@@ -49,17 +49,18 @@ body{
 }
 .bg-container-about{
     background-color: aliceblue;
-    height: 66vh;
+
 }
 
 .about-text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 66vh;
+
     text-align: left;
     padding-top: 30px;
+}
+li {
+  list-style: none;
 }
 .about-heading{
     font-size: 50px;
@@ -97,7 +98,7 @@ body{
 .bg-service-container{
     background-color: black;
     color: white;
-    height: 100vh;
+
 }
 .service-heading{
     font-family: Impact;
@@ -133,16 +134,26 @@ body{
 .recent-work-bg{
     background-image: url("https://static.vecteezy.com/system/resources/previews/030/824/255/non_2x/two-wedding-rings-on-a-black-background-free-photo.jpg");
     background-size: cover;
-    height: 100vh;
+
     color: white;
 }
 
 .our-recent-box{
     border-radius: 16px;
-    background-color: white;
+    background-color: rgba(67, 67, 67, 0.4);
     height: 300px;
     width: 450px;
+
 }
 .wedding-image{
     border-radius: 16px;
+    
+}
+
+.port-card{
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
 }
