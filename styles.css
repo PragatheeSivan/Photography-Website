@@ -1,162 +1,353 @@
+
+:root{
+    --primary-color:#000000;
+    --secondary-color:#d4af37;
+    --white-color:#ffffff;
+    --light-bg:#f5f7fa;
+    --dark-bg:#111111;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    margin: 0px;
-}
-.bg-container{
-    background-color: white;
-
-
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
 }
 
-.web-heading{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+/* NAVBAR */
 
-    font-size: 25px;
-}
-.navb-border{
-
-
-    
-}
-.hero-button{
-    background-color: black;
-    border: 0px solid ;
-    border-radius: 35px;
-    color: white;
-    padding: 20px;
-    width: 100%;
-    max-width: 200px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-.hero-button:hover{
-    background-color: gold;
-    color: black;
-    transform: scale(1.05);
+.custom-navbar{
+    background-color:rgba(0,0,0,0.8);
+    backdrop-filter:blur(10px);
+    padding:15px 0;
 }
 
-.first-text-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-        min-height: 90vh;
-
-    padding-top: 150px;
+.logo-text{
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:2px;
 }
+
+.nav-link{
+    color:white !important;
+    margin-left:20px;
+    font-weight:500;
+    position:relative;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background-color:gold;
+    transition:0.4s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+/* HERO */
+
+.hero-section{
+    min-height:100vh;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552");
+
+    background-size:cover;
+    background-position:center;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
 .hero-heading{
-    font-family: Impact;
-    font-size: clamp(42px, 8vw, 80px);
-}
-.hero-para{
-    font-size: 20px;
-}
-.bg-container-about{
-    background-color: aliceblue;
-
+    font-size:clamp(45px,8vw,90px);
+    font-weight:800;
+    margin-bottom:20px;
 }
 
-.about-text{
-    display: flex;
-    flex-direction: column;
-
-    text-align: left;
-    padding-top: 30px;
-}
-li {
-  list-style: none;
-}
-.about-heading{
-    font-size: 50px;
-    font-family: Impact;
-
-}
-.about-paragraph{
-    font-size: 18px;
-
+.hero-paragraph{
+    font-size:18px;
+    max-width:750px;
+    margin:auto;
+    margin-bottom:30px;
+    line-height:1.8;
 }
 
-.sub-img{
-  width: 100%;
-  max-width: 650px;
-  border-radius: 16px;
+/* BUTTONS */
 
-}
-.img-align{
-    display: flex;
-
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-    padding: 30px;
- 
-
-}
-.li-heading{
-    font-family: Impact;
-}
-.li-content{
-
+.custom-btn{
+    background-color:gold;
+    color:black;
+    border:none;
+    padding:14px 32px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.4s;
 }
 
-.bg-service-container{
-    background-color: black;
-    color: white;
-
-}
-.service-heading{
-    font-family: Impact;
-}
-.service-paragraph{
-    font-family: Calibri;
-    font-size: 18px;
-    font-weight: 600;
-}
-.card-align{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-     gap: 25px;
-
-}
-.box-container{
-    width: 45%;
-    border: 1px solid white;
-    border-radius: 40px;
-    padding: 20px;
-
-    transition: all 0.3s ease;
-    cursor: pointer;
-
-}
-.box-container:hover{
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 25px rgba(255, 215, 0, 0.4);
-    border-color: gold;
-}
-.recent-work-bg{
-    background-image: url("https://static.vecteezy.com/system/resources/previews/030/824/255/non_2x/two-wedding-rings-on-a-black-background-free-photo.jpg");
-    background-size: cover;
-
-    color: white;
+.custom-btn:hover{
+    background-color:white;
+    transform:translateY(-4px);
 }
 
-.our-recent-box{
-    border-radius: 16px;
-    background-color: rgba(67, 67, 67, 0.4);
-    height: 300px;
-    width: 450px;
-
-}
-.wedding-image{
-    border-radius: 16px;
-    
+.custom-btn-outline{
+    background-color:transparent;
+    color:white;
+    border:2px solid white;
+    padding:14px 32px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.4s;
 }
 
-.port-card{
-      display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+.custom-btn-outline:hover{
+    background-color:white;
+    color:black;
+}
+
+/* COMMON */
+
+.section-title{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+/* ABOUT */
+
+.about-section{
+    padding:100px 0;
+    background-color:var(--light-bg);
+}
+
+.about-image{
+    border-radius:20px;
+}
+
+.about-description{
+    font-size:17px;
+    line-height:1.9;
+    color:#555;
+}
+
+.feature-item{
+    margin-bottom:18px;
+    font-weight:500;
+}
+
+.feature-item i{
+    color:gold;
+    margin-right:12px;
+}
+
+/* STATS */
+
+.stats-section{
+    padding:80px 0;
+    background-color:black;
+    color:white;
+}
+
+.stats-section h1{
+    color:gold;
+    font-size:52px;
+    font-weight:700;
+}
+
+/* SERVICES */
+
+.services-section{
+    padding:100px 0;
+    background-color:#111111;
+}
+
+.service-card{
+    background-color:#1d1d1d;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    height:100%;
+    transition:0.4s;
+    color:white;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(255,215,0,0.3);
+}
+
+.service-icon{
+    font-size:45px;
+    color:gold;
+    margin-bottom:25px;
+}
+
+/* PORTFOLIO */
+
+.portfolio-section{
+    padding:100px 0;
+    background-color:white;
+}
+
+.portfolio-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.portfolio-image{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.portfolio-card:hover .portfolio-image{
+    transform:scale(1.1);
+}
+
+.portfolio-overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    background:linear-gradient(transparent,rgba(0,0,0,0.8));
+    padding:30px;
+    color:white;
+}
+
+/* TESTIMONIAL */
+
+.testimonial-section{
+    padding:100px 0;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.testimonial-card{
+    background-color:rgba(255,255,255,0.1);
+    backdrop-filter:blur(8px);
+    padding:35px;
+    border-radius:20px;
+    color:white;
+    transition:0.4s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+}
+
+/* CONTACT */
+
+.contact-section{
+    padding:100px 0;
+    background-color:#f7f7f7;
+}
+
+.contact-box{
+    background-color:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.1);
+}
+
+.custom-input{
+    padding:15px;
+    border-radius:12px;
+    border:1px solid #ddd;
+}
+
+/* FOOTER */
+
+.footer-section{
+    background-color:black;
+    color:white;
+    padding:60px 0 30px;
+}
+
+.footer-logo{
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.social-icons{
+    margin:25px 0;
+}
+
+.social-icons i{
+    font-size:22px;
+    margin:0 12px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.social-icons i:hover{
+    color:gold;
+    transform:translateY(-5px);
+}
+
+.copyright{
+    margin-top:20px;
+    color:#aaa;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:768px){
+
+    .hero-heading{
+        font-size:48px;
+    }
+
+    .section-title{
+        font-size:36px;
+    }
+
+    .hero-paragraph{
+        font-size:16px;
+    }
+
+    .portfolio-image{
+        height:300px;
+    }
+
+    .contact-box{
+        padding:25px;
+    }
+
+    .logo-text{
+        font-size:22px;
+    }
 
 }
