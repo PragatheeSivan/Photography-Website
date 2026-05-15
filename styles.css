@@ -39,6 +39,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 90vh;
+    padding-top: 150px;
 }
 .hero-heading{
     font-family: Impact;
